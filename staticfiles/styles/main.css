@@ -1,0 +1,156 @@
+.navigation-bar{
+    background-color: #f38ddd;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-link{
+    color: #ffffff;
+}
+
+.hero{
+    background-color: #1F2428;
+    min-height: 70vh;
+    color: aquamarine;
+}
+
+#profile_pic{
+    height: 200px;
+    width: 200px;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+body{
+    background-color: white;
+}
+
+.hero-content{
+    width: 800px;
+    margin:  auto;
+    padding: 2em
+    
+
+}
+
+.hero-content-intro{
+    color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:2em;
+
+
+}
+
+.intro--name{
+    font-size: 100px;
+    letter-spacing: .12em;
+    font-weight: 500;
+    
+    
+}
+
+
+
+.description{
+    font-size: 60px;
+    text-align: center;
+}
+
+.slogan{
+    font-size: 30px;
+    text-align: center;
+}
+
+.my-project{
+    font-size: 30px;
+    margin-top: 1em;
+    color: #9c8df3
+}
+
+.project-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.skill-wrapper{
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+
+}
+
+.other-skill-wrapper{
+    display: flex;
+    gap: 1em;
+}
+
+.project-thumb{
+    width: 100%;
+}
+
+.project-body{
+    background-color: aliceblue;
+    padding: 1em;
+}
+
+.skill-container{
+    width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+.skill-tag{
+    background-color: cyan ;
+    width: fit-content;
+    padding: 3px 20px;
+    border-radius: 20px;
+
+}
+
+.section-1{
+    background-color:white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.section-2{
+    background-color:rgb(240, 241, 235);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.project-image{
+    max-width: 800px;
+}
+
+
+
+@media (max-width:900px) {
+    .hero-content-intro{
+        flex-direction: column;
+    }
+    .project-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .skill-container{
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 800px){
+    .hero-content{
+        width: 100%;  
+    }
+}
