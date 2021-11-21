@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-chqsvvui#h+729n9@(32&pf70%3(c@pqx^pxwxu&($+hb+b&o6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portolio-live.herokuapp.com']
+ALLOWED_HOSTS = ['portolio-live.herokuapp.com', '127.0.0.1','localhost']
 
 
 # Application definition
