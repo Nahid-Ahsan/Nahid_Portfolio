@@ -131,7 +131,12 @@ body{
     max-width: 800px;
 }
 
-
+.contact-form{
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    
+}
 
 @media (max-width:900px) {
     .hero-content-intro{
