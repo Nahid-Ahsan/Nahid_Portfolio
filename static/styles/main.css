@@ -23,7 +23,7 @@
 }
 
 body{
-    background-color: #eeebeee8;
+    background-color: #d119d1e8;
 }
 
 .hero-content{
@@ -84,9 +84,9 @@ body{
     width: 8px;
 }
 
-.project-wrapper ::-webkit-scrollbar-track{
-    -webkit-box-shadow: inset 0 0 6px black;
-}
+/* .project-wrapper ::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgb(110, 92, 92);
+} */
 
 .project-wrapper ::-webkit-scrollbar-thumb{
     background-color:aqua;
@@ -101,8 +101,15 @@ body{
 .skill-wrapper{
     margin-top: 2em;
     margin-bottom: 2em;
+    display: flex;
 
 
+}
+
+.skill--logo{
+
+    width: 60px;
+    object-fit:contain;
 }
 
 .other-skill-wrapper{

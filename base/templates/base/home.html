@@ -64,10 +64,17 @@
 <section class="section-1">
     <div class="skill-container">
         <h5>More About Me</h5>
+
         {% for skill in detailedSkills %}
         <div class="skill-wrapper">
-            <h5>{{skill.title}}</h5>
-            <p>{{skill.body}}</p>
+            {% if skill.logo %}
+                <img class ="skill--logo" src="{{skill.logo.url}}">
+            {% endif %}
+            <div>
+                <h5>{{skill.title}}</h5>
+                <p>{{skill.body}}</p>
+            </div>
+            
 
         </div>
 
