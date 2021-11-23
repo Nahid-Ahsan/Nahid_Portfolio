@@ -1,29 +1,38 @@
 .navigation-bar{
-    background-color: #f38ddd;
+    background-color: #680653;
     height: 40px;
     display: flex;
     justify-content: right;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-style: bolder;
 }
 
 .nav-link{
     color: #ffffff;
+    
+}
+
+
+.portfolio{
+    justify-content:left
 }
 
 .hero{
-    background-color: #1F2428;
+    background-color: #680653;
     min-height: 50vh;
-    color: aquamarine;
+    color: rgb(236, 238, 229);
 }
 
 #profile_pic{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     object-fit:cover;
-    border-radius: 50%;
+    border-radius: 75%;
 }
 
 body{
-    background-color: #d119d1e8;
+    background-color: #f7dcf7e8;
 }
 
 .hero-content{
@@ -50,6 +59,7 @@ body{
     font-weight: 500;
     
     
+    
 }
 
 
@@ -68,7 +78,7 @@ body{
 
     font-size: 30px;
     margin-top: 1em;
-    color: #9c8df3
+    color: #7e62ee
 }
 
 .project-wrapper{
@@ -84,9 +94,9 @@ body{
     width: 8px;
 }
 
-/* .project-wrapper ::-webkit-scrollbar-track{
+.project-wrapper ::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 6px rgb(110, 92, 92);
-} */
+}
 
 .project-wrapper ::-webkit-scrollbar-thumb{
     background-color:aqua;
@@ -102,16 +112,18 @@ body{
     margin-top: 2em;
     margin-bottom: 2em;
     display: flex;
+    gap: 2em;
+    align-items: center;
+    
 
 
 }
 
 .skill--logo{
-
     width: 60px;
-    object-fit:contain;
+    
+    
 }
-
 .other-skill-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +197,10 @@ body{
     .skill-container{
         width: 100%;
         
+    }
+
+    .skill-wrapper{
+        flex-flow: column;
     }
 }
 
