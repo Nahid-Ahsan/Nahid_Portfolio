@@ -49,7 +49,7 @@ class Message(models.Model):
     name = models.CharField(max_length=200, null=True)
     email = models.CharField(max_length=200, null=True)
     subject = models.CharField(max_length=200, null=True)
-    body = models.TextField()
+    message = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     is_read = models.BooleanField(default=False)
 

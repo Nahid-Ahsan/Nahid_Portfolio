@@ -30,7 +30,7 @@ class MessageForm(ModelForm):
         self.fields['subject'].widget.attrs.update(
             {'class': 'form-control'})
 
-        self.fields['body'].widget.attrs.update(
+        self.fields['message'].widget.attrs.update(
             {'class': 'form-control'})
 
 class SkillForm(ModelForm):

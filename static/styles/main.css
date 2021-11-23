@@ -1,38 +1,80 @@
 .navigation-bar{
-    background-color: #680653;
-    height: 40px;
+    background-color: #442a3e;
+    height: 50px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
-    font-style: bolder;
+    font-style: inherit;
 }
+
+
+
 
 .nav-link{
     color: #ffffff;
     
 }
 
-
-.portfolio{
-    justify-content:left
-}
-
 .hero{
     background-color: #680653;
     min-height: 50vh;
     color: rgb(236, 238, 229);
+
 }
 
 #profile_pic{
     height: 250px;
     width: 250px;
     object-fit:cover;
-    border-radius: 75%;
+    border-radius: 2em;
+    padding: 0.1em;
+}
+
+.social-link{
+    background-color: #f8f8f8;
+    
+    padding-bottom: 1em;
+    display: flex;
+    justify-content:center;
+    gap: 2em;
+}
+
+#linkedin{
+    height: 60px;
+    width: 60px;
+    object-fit:cover;
+    margin-top: 1em;
+    justify-content: center;
+    
+}
+
+#fb{
+    height: 60px;
+    width: 60px;
+    object-fit:cover;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+#git{
+    height: 60px;
+    width: 60px;
+    object-fit:cover;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+#instagram{
+    height: 60px;
+    width: 60px;
+    object-fit:cover;
+    margin-top: 1em;
+    justify-content: center;
 }
 
 body{
-    background-color: #f7dcf7e8;
+    background-color: #beeed4e8;
 }
 
 .hero-content{
@@ -41,6 +83,13 @@ body{
     padding: 2em
     
 
+}
+
+.subheading{
+    align-items: center;
+    color: rgb(252, 252, 252);
+    margin: auto;
+    margin-top: 1em;
 }
 
 .hero-content-intro{
@@ -63,10 +112,11 @@ body{
 }
 
 
-
 .description{
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
+    justify-content: center;
+    
 }
 
 .slogan{
@@ -78,7 +128,8 @@ body{
 
     font-size: 30px;
     margin-top: 1em;
-    color: #7e62ee
+    color: #48347e;
+    font-style: bolder;
 }
 
 .project-wrapper{
@@ -105,7 +156,13 @@ body{
 }
 
 .project-wrapper ::-webkit-scrollbar-thumb:hover{
-    background-color:skyblue;
+    background-color:rgb(236, 241, 243);
+}
+
+.about-me{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
 }
 
 .skill-wrapper{
@@ -153,17 +210,20 @@ body{
 
 
 .skill-tag{
-    background-color: cyan ;
+    background-color: rgb(230, 179, 10) ;
     width: fit-content;
     padding: 3px 20px;
     border-radius: 20px;
+    font-size: bolder;
+    font-weight: bold
 
 }
 
 .section-1{
-    background-color:rgb(203, 238, 243);
+    background-color:rgb(177, 154, 231);
     padding-top: 1em;
     padding-bottom: 1em;
+    
 }
 
 .section-2{
