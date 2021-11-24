@@ -19,7 +19,7 @@
     
 }
 
-.hero{
+.hero-intro{
     /* background-color: #680653;
     min-height: 50vh;
     color: rgb(236, 238, 229); */
@@ -338,8 +338,14 @@ body{
 }
 
 @media (max-width:900px) {
-    .hero-content-intro{
+    .images{
         flex-direction: column;
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+
     }
     .project-wrapper{
         grid-template-columns: 1fr;
@@ -358,7 +364,7 @@ body{
 }
 
 @media (max-width: 800px){
-    .hero-content{
+    .hero-intro{
         width: 100%;  
     }
 }
