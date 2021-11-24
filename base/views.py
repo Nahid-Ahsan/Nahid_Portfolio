@@ -22,6 +22,17 @@ def homePage(request):
                 'detailedSkills': detailedSkills, 'form': form, 'endorsements': endorsements}
     return render(request, 'base/home.html',context)
 
+def contactPage(request):
+    form = MessageForm()
+
+    if request.method == 'POST':
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message was successfully sent')
+    context = {'form': form}
+    return render(request, 'base/contact.html',context)
+
 
 def projectPage(request, pk):
     project = Project.objects.get(id=pk)

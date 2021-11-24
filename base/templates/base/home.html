@@ -7,10 +7,10 @@
 
 
 <section class="hero">
-    <div class="hero-content">
+    <!-- <div class="hero-content">
         <div class="hero-content-intro">
             <img id='profile_pic' src="{% static 'images/dp_image.jpg' %}">
-            <h1 class= "intro--name"> Nahid <br> Ahsan </h1>
+            <h1 class= "intro--name">Nahid <br> Ahosan </h1>
             
         </div>
         <div class=subheading mb-5> 
@@ -18,20 +18,49 @@
         </div>
 
         <div class="hero-content-subheadline">
-            <h3 class="description">Data Analysts</h3>
+            <h3 class="description">Data Analyst</h3>
             <p class="slogan">I Am Google Certified Data Analysts</p>
         </div>
+    </div> -->
+    <div class="hero">
+        <nav>
+            <img src="{% static 'images/logo.gif' %}" class="logo">
+            <ul>
+                <li><a href="{% url 'home' %}">PROJECTS</a></li>
+                <li><a href="{% url 'contact'%}">CONTACT</a></li>
+                {% if request.user.is_authenticated %}
+                <li><a href="{% url 'inbox' %}">INBOX</a></li>
+                <li><a href="{% url 'add-project' %}">ADD PROJECT</a></li>
+                <li><a href="{% url 'add-skill' %}">ADD SKILL</a></li>
+                {% endif %}
+                <li><a href="#">HIRE ME</a></li>
+
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>I,M Nahid <span>Ahosan</span></h1>
+            <p>This is my official Portfolio website to showcase my 
+                all works related to <br> Deep Learning and Data Analysis </p>
+            <a href="{% static 'pdf/Nahid_Ahosan_CV.pdf' %}">Downdload CV</a>
+            <h5>Shukrabad 32, Dhaka | (+880) 1322588126 | nahidahsan74@gmail.com</h5>
+        </div>
+        <div class="images">
+            <!-- <img src="images/shape.png" class="shape"> -->
+            <img src="{% static 'images/nahid_dpp.png' %}" class="nahid">
+            
+        </div>
+
+        <div class="social">
+    
+            <a href="https://www.linkedin.com/in/md-nahid-ahosan-57a1b3140/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/__n_.ahsan/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Nahid-Ahsan"><i class="fab fa-github"></i></a>
+            
+        </div>
     </div>
+
 </section>
 
-<section class="social">
-    <div class="social-link">
-        <a href="https://www.linkedin.com/in/md-nahid-ahosan-57a1b3140/"> <img id='linkedin' src="{% static 'images/linked.png' %}"></a>
-        <a href="https://github.com/Nahid-Ahsan"> <img id='git' src="{% static 'images/git.png' %}"></a>
-        <a href="https://www.instagram.com/__n_.ahsan/"> <img id='instagram' src="{% static 'images/instagram.png' %}"></a>
-        <a href="https://www.facebook.com/profile.php?id=100007224782130"> <img id='fb' src="{% static 'images/fb.png' %}"></a>
-    </div>
-</section>
 
 <section class="container">
 
@@ -139,7 +168,7 @@
 
 </section>
 
-<section class="section-1">
+<!-- <section class="section-1">
     <div class="container">
         <h3>GET IN TOUCH</h3>
         <form class="contact-form" method="POST">
@@ -161,7 +190,7 @@
 
     </div>
 
-</section>
+</section> -->
 
 
 {% endblock content %}

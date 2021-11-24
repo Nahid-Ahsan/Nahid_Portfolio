@@ -16,4 +16,8 @@ urlpatterns = [
     path('add-skill/',views.addSkill, name="add-skill"),
     path('add-endorsement/',views.addEndorsement, name="add-endorsement"),
 
+    path('contact/',views.contactPage, name="contact"),
+
+
+
 ]
